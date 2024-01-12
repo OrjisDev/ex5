@@ -1,0 +1,8 @@
+<ul>Détails séléctionnés : 
+    <li *ngFor="let detail of detailsShowed"> {{detail}}</li>
+</ul>
+
+<div *ngFor="let voiture of voitures">
+    <h3>ID : {{voiture.id}}, Marque : {{voiture.marque}}, Modèle : {{voiture.modele}}</h3>
+    <button (click)="onClickShowDetails(voiture.details)">Détails</button>
+</div>
